@@ -41,16 +41,35 @@ El desarrollo de la documentación de cada ejercicio se hará en local y al fina
 
   ```bash
   $ git status
-  $ git commit -m "Creación de carpetas y ficheros de partida"
+  $ git add .
+  $ git commit -m "Creación de carpetas y ficheros de partida para cada ejercicio."
   ```
 
-  
+  <img src="./Actividad%20evaluable%203%20-%20Docker.assets/image-20250417002331797.png" alt="image-20250417002331797" style="zoom:55%;" />
+
+  <img src="./Actividad%20evaluable%203%20-%20Docker.assets/image-20250417002508954.png" alt="image-20250417002508954" style="zoom: 53%;" />
+
+  Tras hacer el commit vemos que el archivo en el que vamos introduciendo detalles generales de la práctica tiene cambios que no han sido añadidos al `commit`, lo cual es natural ya que es un archivo dinámico que se va actualizando con las capturas de pantalla necesarias.
 
 - sincronizamos todo lo anterior con el repositorio remoto:
 
-  
+  ```bash
+  $ git remote add origin https://github.com/egl33817/tareaDocker.git
+  $ git remote -v
+  $ git push -u origin main
+  ```
 
-- 
+  <img src="./Actividad%20evaluable%203%20-%20Docker.assets/image-20250417002850965.png" alt="image-20250417002850965" style="zoom:67%;" />
+
+  Estos comandos son los que indica GitHub al crear el repositorio remoto:
+
+  <img src="./Actividad%20evaluable%203%20-%20Docker.assets/image-20250417002950129.png" alt="image-20250417002950129" style="zoom: 55%;" />
+
+- ya por último, comprobamos que en el repositorio remoto tenemos la misma estructura de carpetas y ficheros que hemos creado en nuestro repositorio local tras hacer la sincronización entre ambos repos:
+
+  <img src="./Actividad%20evaluable%203%20-%20Docker.assets/image-20250417003226225.png" alt="image-20250417003226225" style="zoom:38%;" />
+
+A partir de aquí ya podemos centrarnos en el desarrollo de cada ejercicio.
 
 ## 2. URL del repositorio remoto
 
