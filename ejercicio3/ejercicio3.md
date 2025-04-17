@@ -80,3 +80,9 @@ Una vez arrancado nos conectamos al mismo con un navegador:
 Y comprobamos que el script **PHP** se ejecuta correctamente:
 
 <img src="./ejercicio3.assets/image-20250418004849004.png" alt="image-20250418004849004" style="zoom:60%;border:1px solid black;" />
+
+Una vez comprobado que el contenedor funciona lo borramos:
+
+![image-20250418005352945](./ejercicio3.assets/image-20250418005352945.png)
+
+<img src="./ejercicio3.assets/image-20250418005419942.png" alt="image-20250418005419942" style="zoom:50%;" />
