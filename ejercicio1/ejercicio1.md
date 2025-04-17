@@ -82,10 +82,10 @@ Ya tenemos creado el contenedor basado en la imagen de **mariaDB**. Ahora hay qu
 CREATE TABLE modulos
 (
 	id INT AUTO_INCREMENT PRIMARY KEY,
-	nombreModulo VARCHAR(60) NOT NULL
+	nombreAsignatura VARCHAR(60) NOT NULL
 );
 
-INSERT INTO modulos (nombre) VALUES
+INSERT INTO modulos (nombreAsignatura) VALUES
 ('bases de datos'),
 ('programación'),
 ('interfaces'),
@@ -104,13 +104,13 @@ De las dos opciones que se nos dan escogemos **Adminer** para crear otro contene
 
 <img src="./ejercicio1.assets/image-20250417113310811.png" alt="image-20250417113310811" style="zoom:80%;" />
 
-<img src="./ejercicio1.assets/image-20250417113534265.png" alt="image-20250417113534265" style="zoom:50%;" />
+<img src="./ejercicio1.assets/image-20250417154146705.png" alt="image-20250417154146705" style="zoom:50%;" />
 
-<img src="./ejercicio1.assets/image-20250417113639066.png" alt="image-20250417113639066" style="zoom:67%;" />
+<img src="./ejercicio1.assets/image-20250417154258000.png" alt="image-20250417154258000" style="zoom:67%;" />
 
 Nuestros dos contenedores ya están en marcha:
 
-![image-20250417113727801](./ejercicio1.assets/image-20250417113727801.png)
+![image-20250417154352054](./ejercicio1.assets/image-20250417154352054.png)
 
 Metemos al contenedor creado con la imagen de **Adminer** en la red `redej1`:
 
@@ -124,6 +124,38 @@ Al desconectarlo, queda asignado automáticamente a una red sin nombre, desde la
 
 Ya tenemos a ambos contenedores conectados a nuestra red `redej1`:
 
-<img src="./ejercicio1.assets/image-20250417114332289.png" alt="image-20250417114332289" style="zoom:80%;" />
+![image-20250417154653775](./ejercicio1.assets/image-20250417154653775.png)
 
-## 5. Instalación y uso de la Disk Usage
+## 5. Comprobación de la conexión entre ambos contenedores
+
+Una vez que sabemos la dirección IP de cada contenedor, podemos comprobar si se puede hacer un `ping` de `adminer` a`mariadb`:
+
+<img src="./ejercicio1.assets/image-20250417154742745.png" alt="image-20250417154742745" style="zoom:50%;" />
+
+El resultado es correcto, así que vamos a conectarnos ahora sí a la interfaz gráfica de `adminer_egl33817_ej1` a través del navegador:
+
+<img src="./ejercicio1.assets/image-20250417154923366.png" alt="image-20250417154923366" style="zoom: 50%;" />
+
+Ponemos los datos de conexión que definimos al crear el contenedor `mariadb_egl33817_ej1`:
+
+<img src="./ejercicio1.assets/image-20250417155120107.png" alt="image-20250417155120107" style="zoom:50%;" />
+
+Una vez dentro se nos muestra la pantalla principal:
+
+<img src="./ejercicio1.assets/image-20250417155247736.png" alt="image-20250417155247736" style="zoom: 50%;border:1px solid black;" />
+
+Vamos a ejecutar ahora el script **SQL** que generamos anteriormente. Para ello vamos a la opción **Comando SQL** del menú:
+
+<img src="./ejercicio1.assets/image-20250417160630637.png" alt="image-20250417160630637" style="zoom:80%;border:1px solid black;" />
+
+Las sentencias SQL se han ejecutado correctamente:
+
+<img src="./ejercicio1.assets/image-20250417160826953.png" alt="image-20250417160826953" style="zoom:80%;border:1px solid black;" />
+
+Comprobamos que, efectivamente, ahora tenemos una tabla `modulos` en la base de datos `DAW` que contiene los datos aportados anteriormente:
+
+<img src="./ejercicio1.assets/image-20250417161012970.png" alt="image-20250417161012970" style="zoom:67%;border:1px solid black;" />
+
+Y así completamos la realización de este apartado del ejercicio.
+
+## 6. Instalación y uso de la Disk Usage
