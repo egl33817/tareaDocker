@@ -36,8 +36,66 @@ Ya tenemos creada la red.
 
 ## 3. Creación de un contenedor con imagen de mariaDB
 
+Para crear un contenedor a partir de una imagen basada en **mariaDB**, lo primero que tenemos que hacer es buscar una imagen oficial de **mariaDB** en **Docker** **Desktop**, usando para ello el buscador y descargándola con el botón **Pull**:
 
+<img src="./ejercicio1.assets/image-20250417103004888.png" alt="image-20250417103004888" style="zoom:80%;" />
+
+Una vez descargada la imagen, la tendremos disponible en el listado de imágenes. Para crear el contenedor sólo tenemos que hacer clic en el icono con forma de triángulo marcado en verde en la imagen siguiente, que es el equivalente al comando `docker run` de la línea de comandos:
+
+<img src="./ejercicio1.assets/image-20250417103307157.png" alt="image-20250417103307157" style="zoom:80%;" />
+
+Cuando pulsamos dicho botón, nos aparece una ventana en la que podemos configurar diversos parámetros de nuestro contenedor. Aquí tenemos que incluir los datos aportados por el enunciado del ejercicio:
+
+- **nombre del contenedor**: no se especifica ninguno, así que uso una combinación del nombre de la imagen, mi nombre de usuario en **educastur** y el número de ejercicio.
+- **puerto**: debe ser accesible desde el puerto 3306.
+- **variables de entorno**: según la documentación de la imagen de **mariaDB**, cuando creamos un contenedor a partir de la misma podemos definir diversos parámetros mediante este tipo de variables, como por ejemplo la contraseña del usuario root (`MARIADB_ROOT_PASSWORD`), crear un usuario (`MARIADB_USER`), su contraseña (`MARIADB_PASSWORD`) y una base de datos por defecto (`MARIADB_DATABASE`), que en nuestro caso debe llamarse `DAW`. El resto de datos se escogen al azar, siendo el usuario una combinación de mi nombre y apellidos. 
+
+Estas opciones quedan tal y como se puede ver en la siguiente imagen:
+
+<img src="./ejercicio1.assets/image-20250417103805901.png" alt="image-20250417103805901" style="zoom:67%;" />
+
+Al hacer clic en el botón **Run** se crea el contenedor (en la siguiente imagen se puede ver parte del log donde se recoge el proceso de instalación y se pueden ver cosas como el nombre del contenedor o la creación del usuario y de la base de datos por defecto):
+
+<img src="./ejercicio1.assets/image-20250417105122710.png" alt="image-20250417105122710" style="zoom:80%;border:1px solid black;" />
+
+Ahí tenemos nuestro contenedor creado y en funcionamiento:
+
+![image-20250417105347880](./ejercicio1.assets/image-20250417105347880.png)
+
+Sólo quedaría pendiente conectar el contenedor que acabamos de crear a la red `redej1`. Para ello, tenemos en primer lugar que desconectar el contenedor de la red bridge que **Docker** crea por defecto, y después conectarlo a nuestra red `redej1`. Los pasos se pueden ver a continuación:
+
+<img src="./ejercicio1.assets/image-20250417105730710.png" alt="image-20250417105730710" style="zoom: 50%;" />
+
+![image-20250417105842975](./ejercicio1.assets/image-20250417105842975.png)
+
+<img src="./ejercicio1.assets/image-20250417110030569.png" alt="image-20250417110030569" style="zoom:50%;border:1px solid black;" />
+
+![image-20250417110615612](./ejercicio1.assets/image-20250417110615612.png)
+
+![image-20250417110707295](./ejercicio1.assets/image-20250417110707295.png)
+
+Ya tenemos creado el contenedor basado en la imagen de **mariaDB**. Ahora hay que generar un script **SQL** que cree una tabla de nombre módulos con algunos registros, como los nombres de las asignaturas en las que estoy matriculado:
+
+```sql
+CREATE TABLE modulos
+(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	nombreModulo VARCHAR(60) NOT NULL
+);
+
+INSERT INTO modulos (nombre) VALUES
+('bases de datos'),
+('programación'),
+('interfaces'),
+('despliegue'),
+('cliente'),
+('servidor');
+```
+
+De momento lo dejamos así, ya que este script se usará más adelante.
 
 ## 4. Creación de un contenedor con Adminer o phpMyAdmin
+
+
 
 ## 5. Instalación y uso de la extensión Disk Usage
