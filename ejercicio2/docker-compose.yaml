@@ -1,0 +1,10 @@
+services:
+  filebrowser:
+    image: hurlenko/filebrowser:latest
+    container_name: filebrowser_ej2
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./fb-data:/data
+      - ./fb-config:/config
+    restart: unless-stopped
