@@ -66,3 +66,41 @@ Asimismo, por razones desconocidas, en **Docker Desktop** el contenedor aparece 
 Para comprobar que ya tenemos **FileBrowser** funcionando correctamente sólo tenemos que abrir una ventana del navegador y conectarnos a http://localhost:8080:
 
 ![image-20250417211432754](./ejercicio2.assets/image-20250417211432754.png)
+
+Entramos con los datos proporcionados (**admin/admin**):
+
+![image-20250417211659231](./ejercicio2.assets/image-20250417211659231.png)
+
+Cambiamos el idioma de la aplicación a `español`:
+
+![image-20250417212105320](./ejercicio2.assets/image-20250417212105320.png)
+
+![image-20250417212124454](./ejercicio2.assets/image-20250417212124454.png)
+
+Creamos un archivo de texto (en la carpeta `fb-data` no hay nada todavía):
+
+<img src="./ejercicio2.assets/image-20250417212859228.png" alt="image-20250417212859228" style="zoom:50%;" />
+
+![image-20250417212524378](./ejercicio2.assets/image-20250417212524378.png)
+
+![image-20250417212625238](./ejercicio2.assets/image-20250417212625238.png)
+
+![image-20250417212725152](./ejercicio2.assets/image-20250417212725152.png)
+
+Si ahora vamos a la carpeta `fb-data` vemos que se ha creado ese archivo:
+
+<img src="./ejercicio2.assets/image-20250417212820851.png" alt="image-20250417212820851" style="zoom: 50%;" />
+
+En la carpeta `fb-config` se ha creado automáticamente un archivo de nombre`filebrowser.db` imagino que con parámetros de configuración de la aplicación:
+
+<img src="./ejercicio2.assets/image-20250417213159252.png" alt="image-20250417213159252" style="zoom:50%;" />
+
+Vamos a subir un archivo a **FileBrowser**:
+
+![image-20250417213849006](./ejercicio2.assets/image-20250417213849006.png)
+
+![image-20250417214031997](./ejercicio2.assets/image-20250417214031997.png)
+
+![image-20250417214102412](./ejercicio2.assets/image-20250417214102412.png)
+
+Y con esto finaliza la realización de este segundo ejercicio.
