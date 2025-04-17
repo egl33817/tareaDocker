@@ -103,4 +103,6 @@ Vamos a subir un archivo a **FileBrowser**:
 
 ![image-20250417214102412](./ejercicio2.assets/image-20250417214102412.png)
 
+![image-20250417214252405](./ejercicio2.assets/image-20250417214252405.png)
+
 Y con esto finaliza la realización de este segundo ejercicio.
