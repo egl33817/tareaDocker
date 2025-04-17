@@ -158,4 +158,40 @@ Comprobamos que, efectivamente, ahora tenemos una tabla `modulos` en la base de 
 
 Y así completamos la realización de este apartado del ejercicio.
 
-## 6. Instalación y uso de la Disk Usage
+## 6. Instalación de Disk Usage
+
+Vamos a instalar la extensión **Disk Usage**, que es equivalente al comando `docker system df`, es decir, da información sobre el espacio ocupado, etc. La buscamos desde el gestor de extensiones y la instalamos:
+
+<img src="./ejercicio1.assets/image-20250417161759643.png" alt="image-20250417161759643" style="zoom:80%;" />
+
+Una vez instalada, podemos ver cuánto espacio ocupan las imágenes, contenedores, etc.:
+
+![image-20250417162424201](./ejercicio1.assets/image-20250417162424201.png)
+
+## 7. Borrado de los contenedores y red creados
+
+Como nos piden borrar los contenedores y la red creados (no hemos creado ningún volumen), los eliminaremos de uno en uno para ir viendo el efecto de ese borrado en el espacio utilizado (el borrado se gestiona con los botones con forma de papelera que aparecen en el apartado **acciones** de cada contenedor):
+
+![image-20250417162731648](./ejercicio1.assets/image-20250417162731648.png)
+
+<img src="./ejercicio1.assets/image-20250417162839558.png" alt="image-20250417162839558" style="zoom:50%;" />
+
+Tras confirmar el borrado, podemos ver que el espacio usado es menor:
+
+<img src="./ejercicio1.assets/image-20250417162915468.png" alt="image-20250417162915468" style="zoom:50%;" />
+
+<img src="./ejercicio1.assets/image-20250417162954491.png" alt="image-20250417162954491" style="zoom:50%;" />
+
+<img src="./ejercicio1.assets/image-20250417163047720.png" alt="image-20250417163047720" style="zoom:80%;" />
+
+Ya no hay ningún contenedor:
+
+![image-20250417163233720](./ejercicio1.assets/image-20250417163233720.png)
+
+La red se borra haciendo clic en el botón resaltado en la siguiente imagen:
+
+![image-20250417163312949](./ejercicio1.assets/image-20250417163312949.png)
+
+![image-20250417163347926](./ejercicio1.assets/image-20250417163347926.png)
+
+Y con esto finaliza la realización de este primer ejercicio con **Docker Desktop**.
