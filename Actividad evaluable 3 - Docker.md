@@ -69,7 +69,9 @@ El desarrollo de la documentación de cada ejercicio se hará en local y al fina
 
   <img src="./Actividad%20evaluable%203%20-%20Docker.assets/image-20250417003226225.png" alt="image-20250417003226225" style="zoom:38%;" />
 
-A partir de aquí ya podemos centrarnos en el desarrollo de cada ejercicio.
+A partir de aquí ya podemos centrarnos en el desarrollo de cada ejercicio, por lo que crearemos una rama para cada uno de ellos, conectándonos finalmente a la primera para empezar con ese primer ejercicio:
+
+<img src="./Actividad%20evaluable%203%20-%20Docker.assets/image-20250417095740201.png" alt="image-20250417095740201" style="zoom:60%;border:1px solid black;" />
 
 ## 2. URL del repositorio remoto
 
