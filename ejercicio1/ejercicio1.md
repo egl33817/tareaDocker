@@ -52,7 +52,7 @@ Cuando pulsamos dicho botón, nos aparece una ventana en la que podemos configur
 
 Estas opciones quedan tal y como se puede ver en la siguiente imagen:
 
-<img src="./ejercicio1.assets/image-20250417103805901.png" alt="image-20250417103805901" style="zoom:67%;" />
+<img src="./ejercicio1.assets/image-20250417103805901.png" alt="image-20250417103805901" style="zoom: 50%;" />
 
 Al hacer clic en el botón **Run** se crea el contenedor (en la siguiente imagen se puede ver parte del log donde se recoge el proceso de instalación y se pueden ver cosas como el nombre del contenedor o la creación del usuario y de la base de datos por defecto):
 
@@ -66,7 +66,9 @@ Sólo quedaría pendiente conectar el contenedor que acabamos de crear a la red 
 
 <img src="./ejercicio1.assets/image-20250417105730710.png" alt="image-20250417105730710" style="zoom: 50%;" />
 
-![image-20250417105842975](./ejercicio1.assets/image-20250417105842975.png)
+Al desconectarlo, queda asignado automáticamente a una red sin nombre, desde la cual lo podemos conectar a la red que hemos creado `redej1`:
+
+![image-20250417114001083](./ejercicio1.assets/image-20250417114001083.png)
 
 <img src="./ejercicio1.assets/image-20250417110030569.png" alt="image-20250417110030569" style="zoom:50%;border:1px solid black;" />
 
@@ -96,6 +98,32 @@ De momento lo dejamos así, ya que este script se usará más adelante.
 
 ## 4. Creación de un contenedor con Adminer o phpMyAdmin
 
+De las dos opciones que se nos dan escogemos **Adminer** para crear otro contenedor. Los pasos son similares a los que seguimos para crear el contenedor basado en **mariaDB**, por lo que mostraremos las capturas de pantalla del proceso haciendo sólo hincapié en aquello que sea diferente:
 
+<img src="./ejercicio1.assets/image-20250417113142736.png" alt="image-20250417113142736" style="zoom:80%;" />
 
-## 5. Instalación y uso de la extensión Disk Usage
+<img src="./ejercicio1.assets/image-20250417113310811.png" alt="image-20250417113310811" style="zoom:80%;" />
+
+<img src="./ejercicio1.assets/image-20250417113534265.png" alt="image-20250417113534265" style="zoom:50%;" />
+
+<img src="./ejercicio1.assets/image-20250417113639066.png" alt="image-20250417113639066" style="zoom:67%;" />
+
+Nuestros dos contenedores ya están en marcha:
+
+![image-20250417113727801](./ejercicio1.assets/image-20250417113727801.png)
+
+Metemos al contenedor creado con la imagen de **Adminer** en la red `redej1`:
+
+<img src="./ejercicio1.assets/image-20250417113904794.png" alt="image-20250417113904794" style="zoom:67%;" />
+
+Al desconectarlo, queda asignado automáticamente a una red sin nombre, desde la cual lo podemos conectar a la red que hemos creado `redej1`:
+
+![image-20250417114001083](./ejercicio1.assets/image-20250417114001083.png)
+
+<img src="./ejercicio1.assets/image-20250417114216684.png" alt="image-20250417114216684" style="zoom:50%;border:1px solid black;" />
+
+Ya tenemos a ambos contenedores conectados a nuestra red `redej1`:
+
+<img src="./ejercicio1.assets/image-20250417114332289.png" alt="image-20250417114332289" style="zoom:80%;" />
+
+## 5. Instalación y uso de la Disk Usage
