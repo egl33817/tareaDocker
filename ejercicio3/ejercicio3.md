@@ -62,4 +62,21 @@ Si ahora nos vamos al **Docker Desktop**, podemos ver que tenemos una nueva imag
 
 ## 4. Creación de un contenedor a partir de la imagen generada
 
-Vamos a probar la 
+Vamos a probar la imagen creada generando un contenedor a partir de la misma con los siguientes parámetros que se nos especifican en el enunciado del ejercicio:
+
+- debe llamarse `ejercicio3`.
+- debe ser accesible desde un navegador en el puerto `8000`.
+
+Creamos el contenedor y lo ponemos en ejecución:
+
+![image-20250418004243293](./ejercicio3.assets/image-20250418004243293.png)
+
+<img src="./ejercicio3.assets/image-20250418004455159.png" alt="image-20250418004455159" style="zoom:45%;" />
+
+Una vez arrancado nos conectamos al mismo con un navegador:
+
+<img src="./ejercicio3.assets/image-20250418004755353.png" alt="image-20250418004755353" style="zoom:80%;border:1px solid black;" />
+
+Y comprobamos que el script **PHP** se ejecuta correctamente:
+
+<img src="./ejercicio3.assets/image-20250418004849004.png" alt="image-20250418004849004" style="zoom:60%;border:1px solid black;" />
