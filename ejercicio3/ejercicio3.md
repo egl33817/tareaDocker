@@ -86,3 +86,52 @@ Una vez comprobado que el contenedor funciona lo borramos:
 ![image-20250418005352945](./ejercicio3.assets/image-20250418005352945.png)
 
 <img src="./ejercicio3.assets/image-20250418005419942.png" alt="image-20250418005419942" style="zoom:50%;" />
+
+![image-20250418090735353](./ejercicio3.assets/image-20250418090735353.png)
+
+## 5. Subir la imagen a Docker Hub
+
+Antes de subir la imagen al repositorio he tenido que añadir una etiqueta a la misma, ya que al subirla me daba un error de permisos. Los comandos utilizados para añadir esa etiqueta y subirla a **Docker Hub** son:
+
+```bash
+$ docker tag ba9c7cb0c3d9f5e9d7826ebde16cf8f2ce2a6f05faad54df3666bafba942d2e7 robbertods/ejercicio3:version1.0
+$ docker push robbertods/ejercicio3:version1.0
+```
+
+![image-20250418093424338](./ejercicio3.assets/image-20250418093424338.png)
+
+![image-20250418093519211](./ejercicio3.assets/image-20250418093519211.png)
+
+Una vez finalizado el proceso, podemos ver la imagen en nuestro repositorio personal:
+
+<img src="./ejercicio3.assets/image-20250418093627910.png" alt="image-20250418093627910" style="zoom:80%;border:1px solid black;" />
+
+Ahora borramos la imagen que tenemos en nuestra máquina local desde **Docker Desktop**:
+
+![image-20250418094004288](./ejercicio3.assets/image-20250418094004288.png)
+
+<img src="./ejercicio3.assets/image-20250418094027678.png" alt="image-20250418094027678" style="zoom:50%;" />
+
+Comprobamos que ya no existe:
+
+<img src="./ejercicio3.assets/image-20250418094133326.png" alt="image-20250418094133326" style="zoom:80%;" />
+
+Y a continuación la descargamos desde Docker Desktop:
+
+![image-20250418094336341](./ejercicio3.assets/image-20250418094336341.png)
+
+<img src="./ejercicio3.assets/image-20250418094359432.png" alt="image-20250418094359432" style="zoom:50%;" />
+
+![image-20250418094439700](./ejercicio3.assets/image-20250418094439700.png)
+
+La ponemos en marcha en el puerto `9090` por ejemplo:
+
+<img src="./ejercicio3.assets/image-20250418094627065.png" alt="image-20250418094627065" style="zoom:50%;" />
+
+Y comprobamos que todo funciona correctamente:
+
+<img src="./ejercicio3.assets/image-20250418094724919.png" alt="image-20250418094724919" style="zoom:80%;border:1px solid black;" />
+
+<img src="./ejercicio3.assets/image-20250418094749614.png" alt="image-20250418094749614" style="zoom:55%;border:1px solid black;" />
+
+Y así finaliza este tercer y último ejercicio de esta práctica.
