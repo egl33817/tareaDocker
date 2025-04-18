@@ -75,4 +75,12 @@ A partir de aquí ya podemos centrarnos en el desarrollo de cada ejercicio, por 
 
 ## 2. URL del repositorio remoto
 
+El repositorio remoto que se ha creado en **GitHub** puede ser localizado en la siguiente URL:
+
+https://github.com/egl33817/tareaDocker
+
 ## 3. URL del vídeo
+
+El enlace al vídeo en el que se muestra el repositorio creado y se hace una demostración del funcionamiento de la aplicación **FileBrowser** es el siguiente:
+
+[delgadosanchez_roberto_DAW_tareaDocker.mp4](https://educastur-my.sharepoint.com/:v:/g/personal/egl33817_educastur_es/ES1fShHnq3dIhxB2PMQgzb8BIGa52E3y0g07R-Xzvkt6lw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&email=minesmp@educastur.org&e=2LUMTS)
